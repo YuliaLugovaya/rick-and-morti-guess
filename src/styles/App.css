@@ -1,0 +1,172 @@
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.nav-container {
+  background-color: #6a1b9a;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.pages-title {
+  text-align: center;
+  margin: 10vh 0;
+}
+
+.btn {
+  background-color: #ffe082;
+  color: black;
+}
+
+.btn:hover {
+  background-color: #64dd17;
+}
+
+.main {
+  flex: 1 1 auto;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.page-footer {
+  padding-top: 0;
+  background-color: #4a148c;
+}
+
+.page-footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.footer-link {
+  text-decoration: underline;
+}
+
+.home-image,
+.character-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.subtitle {
+  font-weight: 600;
+}
+
+.form-check-btn {
+  margin-right: 10px;
+}
+
+.home-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 3vw;
+  margin-bottom: 10vh;
+}
+
+.home-items {
+  width: 50%;
+}
+
+.home-text {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.btn-add {
+  margin: 5vh 0;
+}
+
+.character-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.character-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10vh 0;
+}
+
+.btn-choice {
+  width: 130px;
+  margin: 20px 10px;
+  background-color: #ea80fc;
+}
+
+.btn-answers {
+  width: 200px;
+  height: 100px;
+  margin: 20px 10px;
+}
+
+.button-answers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20vh 0;
+}
+
+.answers-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.character-answers {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 30px;
+  width: 300px;
+  height: 300px;
+}
+
+.answers-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 5vh 0;
+}
+
+.answers-text {
+  margin: 10px 0;
+}
+
+.right-answer {
+  color: #64dd17;
+}
+
+.false-answer {
+  color: #e53935;
+}
