@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+import CharacterCard from '../CharacterCard/CharacterCard';
 
 function FalseAnswers(props) {
   const { falseAnswers } = useSelector((store) => store.falseAnswersStore);
@@ -8,15 +9,13 @@ function FalseAnswers(props) {
   return (
     <main className='main'>
       <div className='answers-container'>
+        <h3 className='answers-title'>False answers</h3>
         <div className='answers-wrapper'>
           {
             falseAnswers && falseAnswers.map((character) =>
-              <div className='character-answers'>
-                <img className='character-image' key={character.id} src={character.image} alt="character" />
-                <div className='character-buttons'>
-                  <p className='answers-text'>Your answer: <span className='false-answer'>false</span> (this {character.species})</p>
-                </div>
-              </div>
+            <div key={character.id} className="character-answers card">
+            <CharacterCard image={character.image} species={character.species} name={character.name} status={character.status} gender={character.gender} location={character.location} episode={character.episode} />
+          </div>
             )
           }
         </div>

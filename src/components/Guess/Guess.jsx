@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getCharacterThunk } from '../../store/actions/mainActions';
 import { rightAnswersAC } from '../../store/actions/mainActions';
 import { falseAnswersAC } from '../../store/actions/mainActions';
+import { Link } from 'react-router-dom';
 
 function Guess(props) {
 
@@ -21,7 +22,7 @@ function Guess(props) {
 
   const isHuman = () => {
     characters.forEach((character) => {
-      if(rightAnswers.find((el) => el.id === character.id) || falseAnswers.find((el) => el.id === character.id)) {
+      if (rightAnswers.find((el) => el.id === character.id) || falseAnswers.find((el) => el.id === character.id)) {
         return;
       } else {
         if (character.species === 'Human') {
@@ -35,7 +36,7 @@ function Guess(props) {
 
   const isNotHuman = () => {
     characters.forEach((character) => {
-      if(rightAnswers.find((el) => el.id === character.id) || falseAnswers.find((el) => el.id === character.id)) {
+      if (rightAnswers.find((el) => el.id === character.id) || falseAnswers.find((el) => el.id === character.id)) {
         return;
       } else {
         if (character.species === 'Human') {
@@ -51,18 +52,25 @@ function Guess(props) {
     <>
       <main className='main'>
         <div className='character-wrapper'>
-        {
-          characters && characters.map((character) =>
-            <div className='character-container'>
-              <img className='character-image' key={character.id} src={character.image} alt="character" />
-              <div className='character-buttons'>
-                <button type="button" className="btn waves-effect waves-light btn-choice" onClick={isHuman}>Human</button>
-                <button type="button" className="btn waves-effect waves-light btn-choice" onClick={isNotHuman}>Not human</button>
+          {
+            characters && characters.map((character) =>
+              <div key={character.id} className='character-container'>
+                <img className='character-image' src={character.image} alt="character" />
+                <div className='character-buttons'>
+                  <button type="button" className="btn waves-effect waves-light btn-choice" onClick={isHuman}>Human</button>
+                  <button type="button" className="btn waves-effect waves-light btn-choice" onClick={isNotHuman}>Not human</button>
+                </div>
               </div>
-            </div>
-          )
-        }
-        <button type="button" className="btn waves-effect waves-light btn-add" onClick={getCharacter}>Next character</button>
+            )
+          }
+          <div>
+          <button type="button" className="btn waves-effect waves-light btn-choice btn-choice_nav" onClick={getCharacter}>Next character</button>
+          <Link to={`/answers`}>
+            <button className="btn waves-effect waves-light btn-choice btn-choice_nav">
+              Show answers
+            </button>
+          </Link>
+          </div>
         </div>
       </main>
     </>
