@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/rick-and-morti-guess/static/css/main.80fc7ae0.css",
-    "main.js": "/rick-and-morti-guess/static/js/main.4050f317.js",
+    "main.js": "/rick-and-morti-guess/static/js/main.93aa2a1d.js",
     "static/media/right_answers.jpg": "/rick-and-morti-guess/static/media/right_answers.22bdc0376dfe91a9e62d.jpg",
     "static/media/Rick_and_Morty.jpg": "/rick-and-morti-guess/static/media/Rick_and_Morty.163d2bddede61b929a09.jpg",
     "static/media/false_answers.jpg": "/rick-and-morti-guess/static/media/false_answers.5d6a5b02b326aaaea583.jpg",
     "index.html": "/rick-and-morti-guess/index.html",
     "main.80fc7ae0.css.map": "/rick-and-morti-guess/static/css/main.80fc7ae0.css.map",
-    "main.4050f317.js.map": "/rick-and-morti-guess/static/js/main.4050f317.js.map"
+    "main.93aa2a1d.js.map": "/rick-and-morti-guess/static/js/main.93aa2a1d.js.map"
   },
   "entrypoints": [
     "static/css/main.80fc7ae0.css",
-    "static/js/main.4050f317.js"
+    "static/js/main.93aa2a1d.js"
   ]
 }
