@@ -17,7 +17,7 @@ function App() {
       <Header />
       <Provider store={store}>
         <Routes>
-          <Route path='/' element={<Main />} />
+          <Route path='/rick-and-morti-guess' element={<Main />} />
           <Route path='/guess' element={<Guess />} />
           <Route path='/answers' element={<Answers />} />
           <Route path='/right_answers' element={<RightAnswers />} />
