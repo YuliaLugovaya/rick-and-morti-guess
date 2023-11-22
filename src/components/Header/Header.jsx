@@ -7,11 +7,11 @@ function Header() {
       <header>
         <nav className='nav-container'>
           <div className="nav-wrapper">
-            <Link to={`/`}>
+            <Link to={`/rick-and-morti-guess`}>
               <h1 className='title'>Rick and Morty: Guess the characters</h1>
             </Link>
             <ul id="nav-mobile" className="right hide-on-med-and-down">
-              <li><Link to="/">Home</Link></li>
+              <li><Link to="/rick-and-morti-guess">Home</Link></li>
               <li><Link to="/guess">Let's play!</Link></li>
               <li><Link to="/answers">Show answers</Link></li>
             </ul>
